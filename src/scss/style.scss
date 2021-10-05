@@ -6,4 +6,67 @@ body {
   background-color: $background-color;
 }
 
+main{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 768px;
+  width: 90%;
+  border: $border;
+  box-shadow: 2px 2px 5px 3px #000;
+  // background-color: $primary-color;
+
+  h1 {
+    margin: 1.5rem 1rem;
+    font-size: 2.4rem
+  }
+}
+
+section {
+  @include flex-center(space-around, row);
+  align-items: flex-start;
+
+  h2 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+
+  .score-container {
+    width: 47%;
+
+    .score-title {
+      @include flex-center(space-between, row);
+      // padding: 0 1rem;
+
+      button {
+        @extend %btn-properties;
+      }
+    }
+
+    Ul {
+      list-style: none;
+      border: $border;
+      margin: 1rem 0;
+
+    }
+
+    li {
+      padding: 0.7rem 0.2rem;
+      color: $text-color;
+      font-weight: bolder;
+
+      &:nth-child(even) {
+        background-color: $secondary-color;
+      }
+    }
+  }
+
+  
+
+
+}
+
+
+
 @import 'responsive';
