@@ -62,7 +62,29 @@ section {
     }
   }
 
-  
+  form {
+    width: 33%;
+    
+    & > div {
+      margin:1rem 0;
+    }
+    
+    input {
+      width: 100%;
+      padding: 0.4rem;
+      outline: none;
+      border: $border;
+
+      &::placeholder {
+        color: $text-color;
+        font-weight: bolder;
+      }
+    }
+
+    button {
+      @extend %btn-properties;
+    }
+  }
 
 
 }
