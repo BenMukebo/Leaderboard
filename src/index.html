@@ -6,8 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leaderboard</title>
 </head>
+
 <body>
-    
-  <script src="index.js"></script>
+  <main class="">
+    <h1 class="header-title">Leaderboard</h1>
+
+    <section class="container d-flex">
+      <div class="score-container">
+        <div class="score-title">
+          <h2 >Recent scores</h2>
+          <div class="btnRefresh">
+            <button>Refresh</button>
+          </div>
+        </div>
+        <ul class="score-list d-flex">
+          <li class="score-list-item"> Name <span>100</span></li>
+          <li class="score-list-item"> Name <span>20</span></li>
+          <li class="score-list-item"> Name <span>50</span></li>
+          <li class="score-list-item"> Name <span>125</span></li>
+          <li class="score-list-item"> Name <span>77</span></li>
+          <li class="score-list-item"> Name <span>42</span></li>
+        </ul>
+      </div>
+
+      <form class="form">
+        <h2>Add your score</h2>
+        <div class="inputName">
+          <input type="text" placeholder="Your Name"/>
+        </div>
+        <div class="inputScore" >
+          <input type="text" placeholder="Your score"/>
+        </div>
+        <div class="btnSubmit">
+          <button type="submit"> Submit </button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script src="./index.js"></script>
+  <!-- <script src="../dist/main.js"></script> -->
 </body>
 </html>
