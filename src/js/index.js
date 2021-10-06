@@ -15,7 +15,8 @@ form.addEventListener('submit', (e) => {
     player: inputName.value,
     score: inputScore.value,
   };
-  console.log(newPlayer.player, newPlayer.score)
+  if(newPlayer.player == '' || newPlayer.score == '') return;
+  
   data.push(newPlayer);
   renderData(data);
 
