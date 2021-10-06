@@ -8,3 +8,12 @@ const inputScore = document.querySelector('.inputScore input');
 renderData(data);
 
 
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  
+  const newPlayer = {
+    player: inputName.value,
+    score: inputScore.value,
+  };
+
+});
