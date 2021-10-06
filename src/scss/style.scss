@@ -15,7 +15,6 @@ main{
   width: 90%;
   border: $border;
   box-shadow: 2px 2px 5px 3px #000;
-  // background-color: $primary-color;
 
   h1 {
     margin: 1.5rem 1rem;
@@ -37,7 +36,6 @@ section {
 
     .score-title {
       @include flex-center(space-between, row);
-      // padding: 0 1rem;
 
       button {
         @extend %btn-properties;
@@ -48,7 +46,6 @@ section {
       list-style: none;
       border: $border;
       margin: 1rem 0;
-
     }
 
     li {
@@ -85,10 +82,4 @@ section {
       @extend %btn-properties;
     }
   }
-
-
 }
-
-
-
-@import 'responsive';
