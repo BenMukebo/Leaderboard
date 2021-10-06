@@ -15,6 +15,11 @@ Below you can see how this website should look and behave:
 - Learn how to use proper ES6 syntax.
 - Use ES6 modules to write modular JavaScript.
 - Use webpack to bundle JavaScript 🐛🐛.
+  
+## Live Demo
+
+[Live Demo Link]()
+
 
 ## Setup
 
@@ -24,7 +29,6 @@ Below you can see how this website should look and behave:
 $ git clone https://github.com/BenMukebo/Leaderboard.git
 $ cd Leaderboard
 ```
-
 
 ### set up webpack
 
