@@ -1,0 +1,80 @@
+@import 'config';
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: $background-color;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 768px;
+  width: 90%;
+  border: $border;
+  box-shadow: 2px 2px 5px 3px #000;
+
+  h1 {
+    margin: 1.5rem 1rem;
+    font-size: 2.4rem;
+  }
+}
+
+section {
+  @include flex-center(space-around, flex-start);
+
+  h2 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+
+  button {
+    @extend %btn-properties;
+  }
+
+  .score-container {
+    width: 47%;
+
+    .score-title {
+      @include flex-center(space-between, center);
+    }
+
+    ul {
+      list-style: none;
+      border: $border;
+      margin: 1rem 0;
+    }
+
+    li {
+      padding: 0.7rem 0.2rem;
+      color: $text-color;
+      font-weight: bolder;
+
+      &:nth-child(even) {
+        background-color: $secondary-color;
+      }
+    }
+  }
+
+  form {
+    width: 33%;
+
+    & > div {
+      margin: 1rem 0;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.4rem;
+      outline: none;
+      border: $border;
+
+      &::placeholder {
+        color: $text-color;
+        font-weight: bolder;
+      }
+    }
+  }
+}
