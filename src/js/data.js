@@ -5,7 +5,7 @@ export const data = [
   { player: 'name', score: 125 },
   { player: 'name', score: 77 },
 ];
-  
+
 const container = document.querySelector('.score-list');
 
 export const renderData = (data) => {
