@@ -1,12 +1,12 @@
 @import 'config';
-  
+
 body {
   width: 100%;
   height: 100%;
   background-color: $background-color;
 }
 
-main{
+main {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -18,31 +18,30 @@ main{
 
   h1 {
     margin: 1.5rem 1rem;
-    font-size: 2.4rem
+    font-size: 2.4rem;
   }
 }
 
 section {
-  @include flex-center(space-around, row);
-  align-items: flex-start;
+  @include flex-center(space-around, flex-start);
 
   h2 {
     font-size: 1.2rem;
     padding-bottom: 1rem;
   }
 
+  button {
+    @extend %btn-properties;
+  }
+
   .score-container {
     width: 47%;
 
     .score-title {
-      @include flex-center(space-between, row);
-
-      button {
-        @extend %btn-properties;
-      }
+      @include flex-center(space-between, center);
     }
 
-    Ul {
+    ul {
       list-style: none;
       border: $border;
       margin: 1rem 0;
@@ -61,11 +60,11 @@ section {
 
   form {
     width: 33%;
-    
+
     & > div {
-      margin:1rem 0;
+      margin: 1rem 0;
     }
-    
+
     input {
       width: 100%;
       padding: 0.4rem;
@@ -76,10 +75,6 @@ section {
         color: $text-color;
         font-weight: bolder;
       }
-    }
-
-    button {
-      @extend %btn-properties;
     }
   }
 }

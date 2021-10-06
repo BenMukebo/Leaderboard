@@ -14,9 +14,8 @@ $border: 4px solid $text-color;
 
 @mixin flex-center($position, $direction) {
   display: flex;
-  align-items: center;
   justify-content: $position;
-  flex-direction: $direction;
+  align-items: $direction;
 }
 
 %btn-properties {
