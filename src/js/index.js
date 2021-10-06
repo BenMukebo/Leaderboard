@@ -15,5 +15,10 @@ form.addEventListener('submit', (e) => {
     player: inputName.value,
     score: inputScore.value,
   };
+  console.log(newPlayer.player, newPlayer.score)
+  data.push(newPlayer);
+  renderData(data);
 
+  inputName.value = '';
+  inputScore.value = '';
 });
