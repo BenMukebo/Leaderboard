@@ -12,5 +12,9 @@ submitBtn.addEventListener('click', (e) => {
     user: inputName.value,
     score: inputScore.value,
   };
+  if (newPlayer.user === '' || newPlayer.score === '') return;
 
+  postResponse();
+  inputName.value = '';
+  inputScore.value = '';
 });
