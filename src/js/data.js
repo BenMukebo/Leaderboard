@@ -10,3 +10,4 @@ const renderPlayer = (data) => {
   });
 };
 
+export default renderPlayer;
