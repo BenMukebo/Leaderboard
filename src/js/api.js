@@ -13,3 +13,10 @@ export const postResponse = async (newPlayer) => {
   const response = await post.json();
   return response;
 };
+
+export const getResponse = async () => {
+  const get = await fetch(url);
+  const response = await get.json();
+  const sortedGameData = response.result.sort((a, b) => (b.score > a.score ? 1 : -1));
+  renderPlayer(sortedGameData);
+};
