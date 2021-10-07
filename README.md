@@ -11,14 +11,19 @@ Below you can see how this website should look and behave:
 ## Why this Leaderboard page is special?
 
 ### Learning objectives
+
 - Use callbacks and promises.
 - Learn how to use proper ES6 syntax.
 - Use ES6 modules to write modular JavaScript.
-- Use webpack to bundle JavaScript 🐛🐛.
+- Use webpack to bundle JavaScript .
+- Send and receive data from an API.
+- Use API documentation.
+- Understand and use JSON.
+- Make JavaScript code asynchronous.🐛🐛.
   
 ## Live Demo
 
-[Live Demo Link]()
+[Demo](https://thirsty-montalcini-8d768c.netlify.app)
 
 
 ## Setup
