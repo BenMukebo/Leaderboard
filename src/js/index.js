@@ -14,7 +14,9 @@ submitBtn.addEventListener('click', (e) => {
   };
   if (newPlayer.user === '' || newPlayer.score === '') return;
 
-  postResponse();
+  postResponse(newPlayer);
   inputName.value = '';
   inputScore.value = '';
 });
+
+refreshBtn.addEventListener('click', getResponse);
