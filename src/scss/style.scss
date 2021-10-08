@@ -3,7 +3,7 @@
 body {
   width: 100%;
   height: 100%;
-  background-color: $background-color;
+  background-color: $primary-color;
 }
 
 main {
@@ -15,19 +15,35 @@ main {
   width: 90%;
   border: $border;
   box-shadow: 2px 2px 5px 3px #000;
+  background-image: linear-gradient(to bottom, rgba(33, 17, 90, 0.18), rgb(70, 43, 133)), url('../img/backg.jpg');
 
   h1 {
-    margin: 1.5rem 1rem;
+    width: 100%;
+    margin: 1.4rem 1rem;
     font-size: 2.4rem;
+    color: $secondary-color;
   }
 }
 
 section {
-  @include flex-center(space-around, flex-start);
+  @include flex-center(center, space-around );
+
+  flex-direction: column;
+
+  i {
+    color: $text-color;
+  }
 
   h2 {
-    font-size: 1.2rem;
-    padding-bottom: 1rem;
+    font-size: 1.8rem;
+    color: $primary-color;
+    font-family: $font;
+
+    span {
+      padding-right: 0.3rem;
+      font-family: $font;
+      font-size: 1.8rem;
+    }
   }
 
   button {
@@ -35,31 +51,68 @@ section {
   }
 
   .score-container {
-    width: 47%;
+    @include flex-center(center, space-between);
+
+    flex-direction: column;
+    width: 90%;
 
     .score-title {
-      @include flex-center(space-between, center);
+      @include flex-center(flex-start, space-between);
+
+      width: 100%;
     }
 
     ul {
+      width: 100%;
+      min-height: 173px;
       list-style: none;
       border: $border;
-      margin: 1rem 0;
+      margin: 2rem 0;
     }
 
     li {
-      padding: 0.7rem 0.2rem;
+      @include flex-center(center, space-between);
+
+      padding: 0.5rem 0.7rem;
       color: $text-color;
       font-weight: bolder;
 
       &:nth-child(even) {
-        background-color: $secondary-color;
+        background-color: rgb(58 0 144);
+      }
+
+      .person {
+        @include flex-center(center, center);
+      }
+
+      img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50% 50%;
+        margin-right: 0.5rem;
+      }
+
+      span {
+        color: $secondary-color;
       }
     }
   }
 
+  .form-contain {
+    @include flex-center(center, space-between);
+
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .form-title {
+    width: 100%;
+    // mar
+  }
+
   form {
-    width: 33%;
+    width: 100%;
+    margin: 1rem 0;
 
     & > div {
       margin: 1rem 0;
@@ -70,6 +123,7 @@ section {
       padding: 0.4rem;
       outline: none;
       border: $border;
+      background-color: rgb(58 0 144);
 
       &::placeholder {
         color: $text-color;
@@ -78,3 +132,5 @@ section {
     }
   }
 }
+
+@import 'responsive';

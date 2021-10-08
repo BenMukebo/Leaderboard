@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leaderboard</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 </head>
 
 <body>
@@ -14,28 +17,33 @@
     <section class="container">
       <div class="score-container">
         <div class="score-title">
-          <h2 >Recent scores</h2>
+          <h2><span>Recent scores</span><i class="uil uil-trophy  header-icon"></i></h2>
           <div class="btnRefresh">
-            <button>Refresh</button>
+            <button>Refresh 
+              <i class="fa fa-refresh" aria-hidden="true"></i>
+            </button>
           </div>
         </div>
         <ul class="score-list"> </ul>
       </div>
-      <form >
-        <h2>Add your score</h2>
-        <div class="inputName">
-          <input type="text" placeholder="Your Name"/>
+      <div class="form-contain">
+        <div class="form-title">
+          <h2>Add your score</h2>
         </div>
-        <div class="inputScore" >
-          <input type="text" placeholder="Your score"/>
-        </div>
-        <div class="btnSubmit">
-          <button type="submit"> Submit </button>
-        </div>
-      </form>
+        <form >
+          <div class="inputName">
+            <input type="text" placeholder="Your Name"/>
+          </div>
+          <div class="inputScore" >
+            <input type="text" placeholder="Your score"/>
+          </div>
+          <div class="btnSubmit">
+            <button type="submit"> Submit </button>
+          </div>
+        </form>
+      </div>
     </section>
   </main>
   <script src="./js/index.js"></script>
-  <!-- <script src="../dist/main.js"></script> -->
 </body>
 </html>
