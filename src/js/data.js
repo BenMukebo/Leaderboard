@@ -1,5 +1,6 @@
-import image1 from '../img/games.jpg';
-import image2 from '../img/game.jpeg';
+import image1 from '../img/game1.jpg';
+// import image2 from '../img/game3.jpeg';
+import image2 from '../img/game2.jpg';
 
 const images = [image1, image2, image1, image2, image1, image2, image1, image2];
 
