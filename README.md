@@ -5,9 +5,9 @@
 * The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 Below you can see how this website should look and behave:
-|             LEADERBOARD|
-|-------------------------------------|
-|![screenshot](./src/img/screenhot1.png)|
+||             LEADERBOARD           ||
+|-|-----------------------------------|-|
+||![screenshot](./src/img/screenhot1.png)||
 
 ## Why this Leaderboard page is special?
 

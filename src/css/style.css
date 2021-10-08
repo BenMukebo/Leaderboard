@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 section button {
@@ -53,11 +53,14 @@ section i {
   color: #ca9bc3;
 }
 section h2 {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   color: #f9f9f9;
+  font-family: "Caveat", cursive, serif;
 }
-section h2 i {
-  padding-left: 0.3rem;
+section h2 span {
+  padding-right: 0.3rem;
+  font-family: "Caveat", cursive, serif;
+  font-size: 1.8rem;
 }
 section .score-container {
   display: flex;
@@ -116,7 +119,7 @@ section .form-title {
 }
 section form {
   width: 100%;
-  margin: 1.2rem 0;
+  margin: 1rem 0;
 }
 section form > div {
   margin: 1rem 0;
