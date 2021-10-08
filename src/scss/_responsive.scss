@@ -1,0 +1,17 @@
+@media screen and (min-width: 768px) {
+  section {
+    @include flex-center(flex-start, space-around);
+
+    flex-direction: row;
+
+    .score-container {
+      width: 47%;
+    }
+
+    .form-contain {
+      @include flex-center(flex-start, space-between);
+
+      width: 33%;
+    }
+  }
+}
