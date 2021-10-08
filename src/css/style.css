@@ -36,6 +36,7 @@ main {
   box-shadow: 2px 2px 5px 3px #000;
   background-image: linear-gradient(to bottom, rgba(33, 17, 90, 0.18), #462b85), url("../img/backg.jpg");
 }
+
 main h1 {
   width: 100%;
   margin: 1.4rem 1rem;
@@ -49,19 +50,23 @@ section {
   justify-content: space-around;
   flex-direction: column;
 }
+
 section i {
   color: #ca9bc3;
 }
+
 section h2 {
   font-size: 1.8rem;
   color: #f9f9f9;
   font-family: "Caveat", cursive, serif;
 }
+
 section h2 span {
   padding-right: 0.3rem;
   font-family: "Caveat", cursive, serif;
   font-size: 1.8rem;
 }
+
 section .score-container {
   display: flex;
   align-items: center;
@@ -69,12 +74,14 @@ section .score-container {
   flex-direction: column;
   width: 90%;
 }
+
 section .score-container .score-title {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
 }
+
 section .score-container ul {
   width: 100%;
   min-height: 173px;
@@ -82,6 +89,7 @@ section .score-container ul {
   border: 4px solid #242424;
   margin: 2rem 0;
 }
+
 section .score-container li {
   display: flex;
   align-items: center;
@@ -90,23 +98,28 @@ section .score-container li {
   color: #ca9bc3;
   font-weight: bolder;
 }
+
 section .score-container li:nth-child(even) {
   background-color: #3a0090;
 }
+
 section .score-container li .person {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 section .score-container li img {
   width: 25px;
   height: 25px;
   border-radius: 50% 50%;
   margin-right: 0.5rem;
 }
+
 section .score-container li span {
   color: #fdb100;
 }
+
 section .form-contain {
   display: flex;
   align-items: center;
@@ -114,16 +127,20 @@ section .form-contain {
   flex-direction: column;
   width: 90%;
 }
+
 section .form-title {
   width: 100%;
 }
+
 section form {
   width: 100%;
   margin: 1rem 0;
 }
+
 section form > div {
   margin: 1rem 0;
 }
+
 section form input {
   width: 100%;
   padding: 0.4rem;
@@ -131,6 +148,7 @@ section form input {
   border: 4px solid #242424;
   background-color: #3a0090;
 }
+
 section form input::placeholder {
   color: #ca9bc3;
   font-weight: bolder;
@@ -143,12 +161,15 @@ section form input::placeholder {
     justify-content: space-around;
     flex-direction: row;
   }
+
   section .score-container {
     width: 47%;
   }
+
   section .score-container i {
     padding-left: 0.5rem;
   }
+
   section .form-contain {
     display: flex;
     align-items: flex-start;
@@ -156,5 +177,3 @@ section form input::placeholder {
     width: 33%;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
