@@ -20,3 +20,7 @@ submitBtn.addEventListener('click', (e) => {
 });
 
 refreshBtn.addEventListener('click', getResponse);
+
+window.onload = () => {
+  getResponse();
+};

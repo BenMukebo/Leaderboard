@@ -1,8 +1,9 @@
 import image1 from '../img/game1.jpg';
-// import image2 from '../img/game3.jpeg';
 import image2 from '../img/game2.jpg';
+// import image2 from '../img/game3.jpeg';
 
-const images = [image1, image2, image1, image2, image1, image2, image1, image2];
+// eslint-disable-next-line max-len
+const images = [image1, image2, image1, image2, image1, image2, image1, image2, image1, image2, image1, image2];
 
 const container = document.querySelector('.score-list');
 
