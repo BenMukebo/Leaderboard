@@ -1,24 +1,22 @@
 import '../css/style.css';
-import { renderData, data } from './data.js';
+import { postResponse, getResponse } from './api.js';
 
-const form = document.querySelector('form');
 const inputName = document.querySelector('.inputName input');
 const inputScore = document.querySelector('.inputScore input');
+const submitBtn = document.querySelector('.btnSubmit button');
+const refreshBtn = document.querySelector('.btnRefresh button');
 
-renderData(data);
-
-form.addEventListener('submit', (e) => {
+submitBtn.addEventListener('click', (e) => {
   e.preventDefault();
-
   const newPlayer = {
-    player: inputName.value,
+    user: inputName.value,
     score: inputScore.value,
   };
-  if (newPlayer.player === '' || newPlayer.score === '') return;
+  if (newPlayer.user === '' || newPlayer.score === '') return;
 
-  data.push(newPlayer);
-  renderData(data);
-
+  postResponse(newPlayer);
   inputName.value = '';
   inputScore.value = '';
 });
+
+refreshBtn.addEventListener('click', getResponse);
