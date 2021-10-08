@@ -33,6 +33,10 @@ section {
 
   flex-direction: column;
 
+  i {
+    color: $text-color;
+  }
+
   h2 {
     font-size: 1.3rem;
     color: $primary-color;
@@ -44,12 +48,6 @@ section {
 
   button {
     @extend %btn-properties;
-
-    margin-right: 0.2rem;
-  }
-
-  i {
-    color: $text-color;
   }
 
   .score-container {
