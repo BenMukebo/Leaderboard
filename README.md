@@ -46,6 +46,12 @@ $ npm npm install --save-dev style-loader css-loader # To able to use npm run st
 ```
 
 
+### Compile scss
+
+```bash
+$ sass --watch src/scss/style.scss src/css/style.css # this will make to automatically compile scss code in css.
+```
+
 ### Run project
 
 ```bash

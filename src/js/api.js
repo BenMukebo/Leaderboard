@@ -1,8 +1,7 @@
 import renderPlayer from './data.js';
 
-// const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/xjollLOeoeW5XMm3S911/scores';
-const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/xjollLOeoeW5XMm3S9/scores';
-
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/s9UhjFgVL9HCNV7zTqpt/scores';
+// const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/RXGEUgHFa9saDlLAcSKm/scores';
 
 export const postResponse = async (newPlayer) => {
   try {
@@ -17,7 +16,6 @@ export const postResponse = async (newPlayer) => {
     return response;
   } catch (error) {
     // throw new Error(error.message);
-    throw new Error('can not create gam');
   }
 };
 
@@ -28,7 +26,7 @@ export const getResponse = async () => {
     const sortedGameData = response.result.sort((a, b) => (b.score > a.score ? 1 : -1));
     renderPlayer(sortedGameData);
   } catch (err) {
-    console.log(err.message);
+    // console.log('Error:');
   }
 };
 

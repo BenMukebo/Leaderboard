@@ -9,11 +9,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="shortcut icon" href="./img/game2.jpeg" type="image/x-icon">
 </head>
 
 <body>
   <main>
-    <h1 class="header-title">Leaderboard</h1>
+    <div class="header">
+      <h1 class="header-title">Leaderboard</h1>
+      <div class="crown">
+      </div>
+    </div>
     <section class="container">
       <div class="score-container">
         <div class="score-title">
@@ -32,10 +37,10 @@
         </div>
         <form >
           <div class="inputName">
-            <input type="text" placeholder="Your Name"/>
+            <input type="text" placeholder="Your Name" maxlength="10" required/>
           </div>
           <div class="inputScore" >
-            <input type="text" placeholder="Your score"/>
+            <input type="number" placeholder="Your score" maxlength="4" required/>
           </div>
           <div class="btnSubmit">
             <button type="submit"> Submit </button>
