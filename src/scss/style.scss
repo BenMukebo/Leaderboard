@@ -3,25 +3,37 @@
 body {
   width: 100%;
   height: 100%;
-  background-color: $primary-color;
+  background-color: rgb(43, 26, 77);
 }
 
 main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   max-width: 768px;
   width: 90%;
-  border: $border;
-  box-shadow: 2px 2px 5px 3px #000;
+  margin: 0 auto;
+  border: 4px;
+  // border: $border;
+  // box-shadow: 2px 2px 5px 3px #000;
   background-image: linear-gradient(to bottom, rgba(33, 17, 90, 0.18), rgb(70, 43, 133)), url('../img/backg.jpg');
 
-  h1 {
-    width: 100%;
-    margin: 1.4rem 1rem;
-    font-size: 2.4rem;
-    color: $secondary-color;
+  .header {
+    @include flex-center(center, space-between );
+
+    flex-wrap: wrap;
+    padding: 1.4rem 1rem;
+  
+    h1 {
+      font-size: 2.4rem;
+      color: $secondary-color;
+    }
+
+    .crown {
+      width: 45px;
+      height: 45px;
+
+      img {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -63,22 +75,34 @@ section {
     }
 
     ul {
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      height: 280px;
       width: 100%;
       min-height: 173px;
       list-style: none;
       border: $border;
+      box-shadow: 0 35px 60px 0 rgb(0 0 0 / 25%), inset -4px 0 12px 0 rgb(8 8 8 / 25%), inset 6px 0 12px 0 rgb(0 0 0 / 25%), inset 0 -10px 14px 0 rgb(3 3 3 / 40%);
       margin: 2rem 0;
     }
 
     li {
       @include flex-center(center, space-between);
 
-      padding: 0.5rem 0.7rem;
+      padding: 0.75rem;
       color: $text-color;
+      font-size: 1.1rem;
       font-weight: bolder;
-
+      border-radius: 8px;
+      // box-shadow: 0 35px 60px 0 rgb(0 0 0 / 25%), inset -4px 0 12px 0 rgb(8 8 8 / 25%), inset 6px 0 12px 0 rgb(0 0 0 / 25%), inset 0 -10px 14px 0 rgb(3 3 3 / 40%);
+      
       &:nth-child(even) {
         background-color: rgb(58 0 144);
+      }
+      
+      &:nth-child(odd) {
+        background-image: linear-gradient(rgba(70, 5, 155, 0.7), rgba(99, 44, 170, 0.7));
       }
 
       .person {
@@ -86,10 +110,10 @@ section {
       }
 
       img {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
         border-radius: 50% 50%;
-        margin-right: 0.5rem;
+        margin-right: 0.7rem;
       }
 
       span {
@@ -120,17 +144,29 @@ section {
 
     input {
       width: 100%;
-      padding: 0.4rem;
+      padding: 0.6rem;
+      color: $text-color;
+      font-size: 1rem;
+      font-weight: bolder;
       outline: none;
       border: $border;
       background-color: rgb(58 0 144);
+      border-radius: 4px;
 
       &::placeholder {
-        color: $text-color;
+        color: $secondary-color;
         font-weight: bolder;
+      }
+
+      &:focus {
+        color: $text-color;
+        // background-color: rgba(58, 0, 144, 0.718);
+        background-image: linear-gradient(rgba(70, 5, 155, 0.7), rgba(99, 44, 170, 0.7));
       }
     }
   }
 }
+
+
 
 @import 'responsive';
