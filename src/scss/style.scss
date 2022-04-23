@@ -14,25 +14,32 @@ main {
   // border: $border;
   // box-shadow: 2px 2px 5px 3px #000;
   background-image: linear-gradient(to bottom, rgba(33, 17, 90, 0.18), rgb(70, 43, 133)), url('../img/backg.jpg');
+}
 
-  .header {
-    @include flex-center(center, space-between );
+.score-container li img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50%;
+  margin-right: 0.7rem;
+}
 
-    flex-wrap: wrap;
-    padding: 1.4rem 1rem;
-  
-    h1 {
-      font-size: 2.4rem;
-      color: $secondary-color;
-    }
+.header {
+  @include flex-center(center, space-between );
 
-    .crown {
-      width: 45px;
-      height: 45px;
+  flex-wrap: wrap;
+  padding: 1.4rem 1rem;
 
-      img {
-        width: 100%;
-      }
+  h1 {
+    font-size: 2.4rem;
+    color: $secondary-color;
+  }
+
+  .crown {
+    width: 45px;
+    height: 45px;
+
+    img {
+      width: 100%;
     }
   }
 }
@@ -96,24 +103,17 @@ section {
       font-weight: bolder;
       border-radius: 8px;
       // box-shadow: 0 35px 60px 0 rgb(0 0 0 / 25%), inset -4px 0 12px 0 rgb(8 8 8 / 25%), inset 6px 0 12px 0 rgb(0 0 0 / 25%), inset 0 -10px 14px 0 rgb(3 3 3 / 40%);
-      
+
       &:nth-child(even) {
         background-color: rgb(58 0 144);
       }
-      
+
       &:nth-child(odd) {
         background-image: linear-gradient(rgba(70, 5, 155, 0.7), rgba(99, 44, 170, 0.7));
       }
 
       .person {
         @include flex-center(center, center);
-      }
-
-      img {
-        width: 30px;
-        height: 30px;
-        border-radius: 50% 50%;
-        margin-right: 0.7rem;
       }
 
       span {
@@ -131,7 +131,6 @@ section {
 
   .form-title {
     width: 100%;
-    // mar
   }
 
   form {
@@ -166,7 +165,5 @@ section {
     }
   }
 }
-
-
 
 @import 'responsive';

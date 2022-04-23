@@ -31,7 +31,7 @@ $border: 4px solid #242424;
   box-shadow: 0 6px 0 0 rgb(58 0 144);
   text-shadow: 5px 5px 0 rgb(88 19 184 / 80%);
   margin-right: 0.2rem;
-  transition: all 0.5 ease;
+  transition: transform 0.5s ease;
 
   &:active {
     transform: scale(1.1);
