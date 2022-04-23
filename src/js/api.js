@@ -12,24 +12,27 @@ export const postResponse = async (newPlayer) => {
       },
       body: JSON.stringify({ user: newPlayer.user, score: newPlayer.score }),
     });
+
+    if (post.status !== 200) {
+      throw new Error('You can POST your data here.');
+    }
     const response = await post.json();
     return response;
   } catch (error) {
-    // throw new Error(error.message);
+    console.log(error.message);
   }
 };
 
 export const getResponse = async () => {
-  const get = await fetch(url);
   try {
+    const get = await fetch(url);
+    if (get.status !== 200) {
+      throw new Error('You can GET your data here');
+    }
     const response = await get.json();
     const sortedGameData = response.result.sort((a, b) => (b.score > a.score ? 1 : -1));
     renderPlayer(sortedGameData);
   } catch (err) {
-    // console.log('Error:');
+    console.log(err.message);
   }
 };
-
-// if(response.status !== 200){
-//   throw new Error('can not fetch the data');
-// }
