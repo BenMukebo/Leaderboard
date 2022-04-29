@@ -1,7 +1,6 @@
 import renderPlayer from './data.js';
 
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/s9UhjFgVL9HCNV7zTqpt/scores';
-// const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/RXGEUgHFa9saDlLAcSKm/scores';
 
 export const postResponse = async (newPlayer) => {
   const post = await fetch(url, {
