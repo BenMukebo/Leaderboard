@@ -12,7 +12,6 @@ const imgWin = document.querySelector('.header .crown');
 imgWin.innerHTML = `<img src=${win} alt="crown">`;
 
 submitBtn.addEventListener('click', (e) => {
-  // e.preventDefault();
   const newPlayer = {
     user: inputName.value,
     score: inputScore.value,
