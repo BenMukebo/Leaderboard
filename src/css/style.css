@@ -20,7 +20,6 @@ section button {
   margin-right: 0.2rem;
   transition: transform 0.5s ease;
 }
-
 section button:active {
   transform: scale(1.1);
 }
@@ -34,7 +33,7 @@ body {
 main {
   max-width: 768px;
   width: 90%;
-  margin: 0 auto;
+  margin: 1rem auto;
   border: 4px;
   background-image: linear-gradient(to bottom, rgba(33, 17, 90, 0.18), #462b85), url("../img/backg.jpg");
 }
@@ -53,17 +52,14 @@ main {
   flex-wrap: wrap;
   padding: 1.4rem 1rem;
 }
-
 .header h1 {
   font-size: 2.4rem;
   color: #fdb100;
 }
-
 .header .crown {
   width: 45px;
   height: 45px;
 }
-
 .header .crown img {
   width: 100%;
 }
@@ -74,23 +70,19 @@ section {
   justify-content: space-around;
   flex-direction: column;
 }
-
 section i {
   color: #ca9bc3;
 }
-
 section h2 {
   font-size: 1.8rem;
   color: #f9f9f9;
   font-family: "Caveat", cursive, serif;
 }
-
 section h2 span {
   padding-right: 0.3rem;
   font-family: "Caveat", cursive, serif;
   font-size: 1.8rem;
 }
-
 section .score-container {
   display: flex;
   align-items: center;
@@ -98,14 +90,12 @@ section .score-container {
   flex-direction: column;
   width: 90%;
 }
-
 section .score-container .score-title {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
 }
-
 section .score-container ul {
   display: flex;
   flex-direction: column;
@@ -118,7 +108,6 @@ section .score-container ul {
   box-shadow: 0 35px 60px 0 rgba(0, 0, 0, 0.25), inset -4px 0 12px 0 rgba(8, 8, 8, 0.25), inset 6px 0 12px 0 rgba(0, 0, 0, 0.25), inset 0 -10px 14px 0 rgba(3, 3, 3, 0.4);
   margin: 2rem 0;
 }
-
 section .score-container li {
   display: flex;
   align-items: center;
@@ -129,25 +118,20 @@ section .score-container li {
   font-weight: bolder;
   border-radius: 8px;
 }
-
 section .score-container li:nth-child(even) {
   background-color: #3a0090;
 }
-
 section .score-container li:nth-child(odd) {
   background-image: linear-gradient(rgba(70, 5, 155, 0.7), rgba(99, 44, 170, 0.7));
 }
-
 section .score-container li .person {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 section .score-container li span {
   color: #fdb100;
 }
-
 section .form-contain {
   display: flex;
   align-items: center;
@@ -155,20 +139,16 @@ section .form-contain {
   flex-direction: column;
   width: 90%;
 }
-
 section .form-title {
   width: 100%;
 }
-
 section form {
   width: 100%;
   margin: 1rem 0;
 }
-
 section form > div {
   margin: 1rem 0;
 }
-
 section form input {
   width: 100%;
   padding: 0.6rem;
@@ -180,12 +160,10 @@ section form input {
   background-color: #3a0090;
   border-radius: 4px;
 }
-
 section form input::placeholder {
   color: #fdb100;
   font-weight: bolder;
 }
-
 section form input:focus {
   color: #ca9bc3;
   background-image: linear-gradient(rgba(70, 5, 155, 0.7), rgba(99, 44, 170, 0.7));
@@ -198,7 +176,6 @@ section form input:focus {
     margin-right: 7%;
   }
 }
-
 @media screen and (min-width: 768px) {
   main {
     position: absolute;
@@ -206,7 +183,6 @@ section form input:focus {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
   main .header .crown {
     width: 45px;
     height: 45px;
@@ -219,15 +195,12 @@ section form input:focus {
     justify-content: space-around;
     flex-direction: row;
   }
-
   section .score-container {
     width: 47%;
   }
-
   section .score-container i {
     padding-left: 0.5rem;
   }
-
   section .form-contain {
     display: flex;
     align-items: flex-start;
@@ -235,3 +208,5 @@ section form input:focus {
     width: 33%;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

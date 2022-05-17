@@ -19,7 +19,7 @@ submitBtn.addEventListener('click', (e) => {
 
   if (newPlayer.user === '' || newPlayer.score === '') return;
   e.preventDefault();
-  if (newPlayer.user.length > 10 || newPlayer.score.length > 4) return;
+  if (newPlayer.user.length > 13 || newPlayer.score.length > 4) return;
   if (newPlayer.user.length < 3 || newPlayer.score < 1) return;
 
   postRequest(newPlayer);
